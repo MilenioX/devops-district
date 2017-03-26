@@ -1,0 +1,7 @@
+apache:
+  container_name: front-end-server
+  image: basic-apache:2
+  ports:
+    - 80:80
+  volumes:
+    - /tmp/docker_shared/apache/:/var/www/html
